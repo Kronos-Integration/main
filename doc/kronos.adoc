@@ -1,0 +1,45 @@
+= Kronos Integration : Microservice Framework
+:docinfo1:
+:toc: left
+
+== Adpater
+
+:leveloffset: 1
+
+include::../node_modules/kronos-adapter-inbound-file/doc/index.adoc[]
+
+include::../node_modules/kronos-adapter-inbound-http/doc/index.adoc[]
+
+include::../node_modules/kronos-adapter-outbound-file/doc/index.adoc[]
+
+:leveloffset: -1
+
+== Steps
+
+:leveloffset: 1
+
+include::../node_modules/kronos-step/doc/index.adoc[]
+
+include::../node_modules/kronos-step-data-processor-csv/doc/index.adoc[]
+
+include::../node_modules/kronos-step-gzip/doc/index.adoc[]
+
+:leveloffset: -1
+
+== Modules
+
+:leveloffset: 1
+
+include::../node_modules/stream-line-header/doc/index.adoc[]
+
+include::../node_modules/stream-line-parser/doc/index.adoc[]
+
+include::../node_modules/stream-line-tokenizer-csv/doc/index.adoc[]
+
+include::../node_modules/stream-line-tokens2obj/doc/index.adoc[]
+
+include::../node_modules/stream-object-data-processor-chunk/doc/index.adoc[]
+
+include::../node_modules/stream-object-data-processor-row/doc/index.adoc[]
+
+:leveloffset: -1
