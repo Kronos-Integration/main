@@ -30,7 +30,7 @@
     "kronos-adapter-outbound-file": "^1.0.0",
     "kronos-step": "^1.1.0",
     "kronos-step-data-processor-csv": "^1.2.0",
-    "kronos-step-gzip": "^1.0.0",
+    "kronos-step-gzip": "^1.0.1",
     "stream-line-header": "^1.0.2",
     "stream-line-parser": "^1.0.0",
     "stream-line-tokenizer-csv": "^1.0.0",
