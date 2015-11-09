@@ -42,6 +42,6 @@
     "asciidoctor.js": "^1.5.2",
     "broccoli": "^0.16.8",
     "broccoli-funnel": "^0.2.8",
-    "broccoli-merge-trees": "^0.2.3"
+    "broccoli-merge-trees": "^1.0.0"
   }
 }
