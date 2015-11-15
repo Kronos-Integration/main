@@ -1,29 +1,25 @@
 {
   "name": "kronos-main",
+  "version": "0.0.0",
   "description": "Base step implementation",
   "main": "lib/adapter-outbound-file.js",
   "scripts": {
+    "cover": "node ./node_modules/istanbul/lib/cli.js cover --hook-run-in-context ./node_modules/mocha/bin/_mocha -- --R spec --U exports test",
+    "doc": "jsdoc lib/*.js",
+    "test": "mocha test/*_test.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://git@github.com/Kronos-Integration/kronos-main.git"
+    "url": "git+https://github.com/Kronos-Integration/kronos-main.git"
   },
   "bugs": {
     "url": "https://github.com/Kronos-Integration/kronos-main/issues"
   },
   "homepage": "https://github.com/Kronos-Integration/kronos-main#readme",
-  "engines": {
-    "iojs": "2.0.0"
-  },
   "release": {
     "debug": false
   },
-  "author": {
-    "name": "Torsten Link",
-    "email": "torstenlink@gmx.de"
-  },
-  "license": "BSD-2-Clause",
   "dependencies": {
     "kronos-adapter-inbound-file": "^1.0.0",
     "kronos-adapter-inbound-http": "^1.0.0",
@@ -43,5 +39,19 @@
     "broccoli": "^0.16.8",
     "broccoli-funnel": "^0.2.8",
     "broccoli-merge-trees": "^1.0.0"
+  },
+  "contributors": [
+    {
+      "name": "Torsten Link",
+      "email": "torstenlink@gmx.de"
+    },
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
+  "license": "BSD-2-Clause",
+  "engines": {
+    "node": ">=4.2.1"
   }
 }
