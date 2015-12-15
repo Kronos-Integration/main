@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "kronos-adapter-inbound-file": "^1.0.0",
-    "kronos-adapter-inbound-http": "^2.1.0",
+    "kronos-adapter-inbound-http": "^2.1.1",
     "kronos-step": "^2.8.0",
     "kronos-adapter-outbound-file": "^1.0.2",
     "kronos-step-data-processor-csv": "^1.2.0",
