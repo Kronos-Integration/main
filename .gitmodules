@@ -10,3 +10,42 @@
 [submodule "kronos-service-manager"]
 	path = kronos-service-manager
 	url = https://github.com/Kronos-Integration/kronos-service-manager.git
+[submodule "kronos-adapter-inbound-file"]
+	path = kronos-adapter-inbound-file
+	url = https://github.com/Kronos-Integration/kronos-adapter-inbound-file.git
+[submodule "kronos-adapter-inbound-http"]
+	path = kronos-adapter-inbound-http
+	url = https://github.com/Kronos-Integration/kronos-adapter-inbound-http.git
+[submodule "kronos-adapter-outbound-file"]
+	path = kronos-adapter-outbound-file
+	url = https://github.com/Kronos-Integration/kronos-adapter-outbound-file.git
+[submodule "kronos-service-manager-consul"]
+	path = kronos-service-manager-consul
+	url = https://github.com/Kronos-Integration/kronos-service-manager-consul.git
+[submodule "kronos-step-data-processor-csv"]
+	path = kronos-step-data-processor-csv
+	url = https://github.com/Kronos-Integration/kronos-step-data-processor-csv.git
+[submodule "kronos-step-gzip"]
+	path = kronos-step-gzip
+	url = https://github.com/Kronos-Integration/kronos-step-gzip.git
+[submodule "kronos-step-passthrough"]
+	path = kronos-step-passthrough
+	url = https://github.com/Kronos-Integration/kronos-step-passthrough.git
+[submodule "stream-line-header"]
+	path = stream-line-header
+	url = https://github.com/Kronos-Integration/stream-line-header.git
+[submodule "stream-line-parser"]
+	path = stream-line-parser
+	url = https://github.com/Kronos-Integration/stream-line-parser.git
+[submodule "stream-line-tokenizer-csv"]
+	path = stream-line-tokenizer-csv
+	url = https://github.com/Kronos-Integration/stream-line-tokenizer-csv.git
+[submodule "stream-line-tokens2obj"]
+	path = stream-line-tokens2obj
+	url = https://github.com/Kronos-Integration/stream-line-tokens2obj.git
+[submodule "stream-object-data-processor-chunk"]
+	path = stream-object-data-processor-chunk
+	url = https://github.com/Kronos-Integration/stream-object-data-processor-chunk.git
+[submodule "stream-object-data-processor-row"]
+	path = stream-object-data-processor-row
+	url = https://github.com/Kronos-Integration/stream-object-data-processor-row.git

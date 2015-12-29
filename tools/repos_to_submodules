@@ -1,0 +1,145 @@
+#!/usr/bin/env node
+
+"use strict";
+
+const GitHubApi = require("node-github"),
+  keychain = require('keychain'),
+  spawn = require('child_process').spawnSync;
+
+var github = new GitHubApi({
+  version: "3.0.0",
+  debug: false
+});
+
+let account = "arlac77";
+let org = "Kronos-Integration";
+let org_id = "14301944";
+let team_id = "1765081";
+
+keychain.getPassword({
+  account: account,
+  service: 'github.com',
+  type: 'internet'
+}, function (err, pass) {
+  if (err) {
+    console.log(`${err}`);
+    return;
+  }
+  github.authenticate({
+    type: "basic",
+    username: account,
+    password: pass
+  });
+
+  work();
+});
+
+
+function work() {
+
+  github.orgs.getTeamRepos({
+    org: org,
+    id: team_id,
+    user: account,
+    per_page: 100
+  }, function (err, res) {
+    if (err) {
+      console.log(err);
+      return;
+    }
+
+    res.forEach(r => {
+      if (r.name === 'kronos-main') {
+        return;
+      }
+      console.log(`${r.clone_url}`);
+      let git_submodule_add = spawn('git', ['submodule', 'add', r.clone_url]);
+
+      git_submodule_add.on('close', function (code, signal) {
+        console.log('child process terminated due to receipt of signal ' + signal);
+      });
+    });
+    //console.log(`res: ${JSON.stringify(res,undefined,2)}`);
+  });
+
+  /*
+    github.orgs.get({
+      org: org,
+      user: account
+    }, function (err, res) {
+      if (err) {
+        console.log(err);
+        return;
+      }
+      console.log(`res: ${JSON.stringify(res,undefined,2)}`);
+    });
+  */
+
+  /*
+    github.orgs.getTeams({
+      org: org,
+      user: account
+    }, function (err, res) {
+      if (err) {
+        console.log(err);
+        return;
+      }
+      console.log(`res: ${JSON.stringify(res,undefined,2)}`);
+    });
+  */
+
+  /*
+    github.orgs.getMembers({
+      org: org,
+      user: account
+    }, function (err, res) {
+      if (err) {
+        console.log(err);
+        return;
+      }
+      console.log(`res: ${JSON.stringify(res,undefined,2)}`);
+    });
+  */
+
+  /*
+  github.orgs.getFromUser({
+    user: account
+  }, function (err, res) {
+    if (err) {
+      console.log(err);
+      return;
+    }
+    console.log(`res: ${res}`);
+  });
+
+
+  github.user.update({
+    location: "Germany"
+  }, function (err) {
+    console.log("done!");
+  });
+  */
+}
+
+/*
+
+
+
+*(
+
+)
+/*
+github.user.getFollowingFromUser({
+  user: "arlac77"
+}, function (err, res) {
+  console.log(JSON.stringify(res));
+});
+*/
+
+/*
+github.orgs.getTeamRepos({
+  id: "Kronos-Integration"
+}, function (err, res) {
+  console.log(JSON.stringify(res));
+});
+*/
