@@ -1,0 +1,12 @@
+[submodule "kronos-step"]
+	path = kronos-step
+	url = https://github.com/Kronos-Integration/kronos-step.git
+[submodule "kronos-flow"]
+	path = kronos-flow
+	url = https://github.com/Kronos-Integration/kronos-flow.git
+[submodule "kronos-service"]
+	path = kronos-service
+	url = https://github.com/Kronos-Integration/kronos-service.git
+[submodule "kronos-service-manager"]
+	path = kronos-service-manager
+	url = https://github.com/Kronos-Integration/kronos-service-manager.git
