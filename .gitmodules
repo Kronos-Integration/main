@@ -49,3 +49,57 @@
 [submodule "stream-object-data-processor-row"]
 	path = stream-object-data-processor-row
 	url = https://github.com/Kronos-Integration/stream-object-data-processor-row.git
+[submodule "kronos-service-manager-admin"]
+	path = kronos-service-manager-admin
+	url = https://github.com/Kronos-Integration/kronos-service-manager-admin.git
+[submodule "kronos-cluster-node"]
+	path = kronos-cluster-node
+	url = https://github.com/Kronos-Integration/kronos-cluster-node.git
+[submodule "kronos-flow-control-step"]
+	path = kronos-flow-control-step
+	url = https://github.com/Kronos-Integration/kronos-flow-control-step.git
+[submodule "kronos-http-routing-step"]
+	path = kronos-http-routing-step
+	url = https://github.com/Kronos-Integration/kronos-http-routing-step.git
+[submodule "kronos-step-archive-arangodb"]
+	path = kronos-step-archive-arangodb
+	url = https://github.com/Kronos-Integration/kronos-step-archive-arangodb.git
+[submodule "kronos-step-stdio"]
+	path = kronos-step-stdio
+	url = https://github.com/Kronos-Integration/kronos-step-stdio.git
+[submodule "kronos-step-archive-tar"]
+	path = kronos-step-archive-tar
+	url = https://github.com/Kronos-Integration/kronos-step-archive-tar.git
+[submodule "kronos-step-system"]
+	path = kronos-step-system
+	url = https://github.com/Kronos-Integration/kronos-step-system.git
+[submodule "kronos-adapter-inbound-http-file"]
+	path = kronos-adapter-inbound-http-file
+	url = https://github.com/Kronos-Integration/kronos-adapter-inbound-http-file.git
+[submodule "bidi-endpoints-playground"]
+	path = bidi-endpoints-playground
+	url = https://github.com/Kronos-Integration/bidi-endpoints-playground.git
+[submodule "kronos-test-step"]
+	path = kronos-test-step
+	url = https://github.com/Kronos-Integration/kronos-test-step.git
+[submodule "kronos-message"]
+	path = kronos-message
+	url = https://github.com/Kronos-Integration/kronos-message.git
+[submodule "kronos-koa"]
+	path = kronos-koa
+	url = https://github.com/Kronos-Integration/kronos-koa.git
+[submodule "archive-arangodb"]
+	path = archive-arangodb
+	url = https://github.com/Kronos-Integration/archive-arangodb.git
+[submodule "npm-package-template"]
+	path = npm-package-template
+	url = https://github.com/Kronos-Integration/npm-package-template.git
+[submodule "kronos-service-manager-ui"]
+	path = kronos-service-manager-ui
+	url = https://github.com/Kronos-Integration/kronos-service-manager-ui.git
+[submodule "kronos-step-logger"]
+	path = kronos-step-logger
+	url = https://github.com/Kronos-Integration/kronos-step-logger.git
+[submodule "kronos-adapter-inbound-http-graphql-admin"]
+	path = kronos-adapter-inbound-http-graphql-admin
+	url = https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql-admin.git
