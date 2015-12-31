@@ -103,3 +103,6 @@
 [submodule "kronos-adapter-inbound-http-graphql-admin"]
 	path = kronos-adapter-inbound-http-graphql-admin
 	url = https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql-admin.git
+[submodule "kronos-step-file"]
+	path = kronos-step-file
+	url = https://github.com/Kronos-Integration/kronos-step-file.git
