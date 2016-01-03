@@ -20,20 +20,6 @@
   "release": {
     "debug": false
   },
-  "dependencies": {
-    "kronos-adapter-inbound-file": "^1.0.0",
-    "kronos-adapter-inbound-http": "^3.4.4",
-    "kronos-step": "^3.0.1",
-    "kronos-adapter-outbound-file": "^1.0.5",
-    "kronos-step-data-processor-csv": "^1.2.1",
-    "kronos-step-gzip": "^1.0.3",
-    "stream-line-header": "^1.0.2",
-    "stream-line-parser": "^1.0.0",
-    "stream-line-tokenizer-csv": "^1.0.1",
-    "stream-line-tokens2obj": "^1.0.1",
-    "stream-object-data-processor-chunk": "^1.0.0",
-    "stream-object-data-processor-row": "^1.0.0"
-  },
   "devDependencies": {
     "asciidoctor.js": "^1.5.2",
     "broccoli": "^0.16.9",
