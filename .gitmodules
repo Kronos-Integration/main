@@ -115,3 +115,6 @@
 [submodule "kronos-service-consul"]
 	path = kronos-service-consul
 	url = https://github.com/Kronos-Integration/kronos-service-consul.git
+[submodule "kronos-interceptor"]
+	path = kronos-interceptor
+	url = https://github.com/Kronos-Integration/kronos-interceptor.git
