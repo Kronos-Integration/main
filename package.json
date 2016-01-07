@@ -17,9 +17,6 @@
     "url": "https://github.com/Kronos-Integration/kronos-main/issues"
   },
   "homepage": "https://github.com/Kronos-Integration/kronos-main#readme",
-  "release": {
-    "debug": false
-  },
   "devDependencies": {
     "asciidoctor.js": "^1.5.2",
     "broccoli": "^0.16.9",
@@ -27,7 +24,8 @@
     "broccoli-merge-trees": "^1.1.1",
     "keychain": "^1.0.0",
     "node-github": "0.0.3",
-    "octokat": "^0.4.15"
+    "octokat": "^0.4.15",
+    "verb": "^0.8.10"
   },
   "contributors": [{
     "name": "Torsten Link",
@@ -39,5 +37,25 @@
   "license": "BSD-2-Clause",
   "engines": {
     "node": ">=4.2.1"
+  },
+  "verb": {
+    "ignore": [
+      ".git"
+    ],
+    "deps": {
+      "include": [
+        "readme-includes",
+        "readme-badges"
+      ]
+    },
+    "reflinks": {
+      "list": [
+        "jsdiff",
+        "option-cache",
+        "template",
+        "plasma",
+        "config-cache"
+      ]
+    }
   }
 }
