@@ -118,3 +118,6 @@
 [submodule "kronos-interceptor"]
 	path = kronos-interceptor
 	url = https://github.com/Kronos-Integration/kronos-interceptor.git
+[submodule "kronos-service-admin"]
+	path = kronos-service-admin
+	url = https://github.com/Kronos-Integration/kronos-service-admin.git
