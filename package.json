@@ -21,7 +21,7 @@
     "debug": false
   },
   "devDependencies": {
-    "asciidoctor.js": "^1.5.2",
+    "asciidoctor.js": "^1.5.3",
     "broccoli": "^0.16.9",
     "broccoli-funnel": "^1.0.1",
     "broccoli-merge-trees": "^1.1.1",
@@ -29,13 +29,16 @@
     "node-github": "0.0.3",
     "octokat": "^0.4.15"
   },
-  "contributors": [{
-    "name": "Torsten Link",
-    "email": "torstenlink@gmx.de"
-  }, {
-    "name": "Markus Felten",
-    "email": "markus.felten@gmx.de"
-  }],
+  "contributors": [
+    {
+      "name": "Torsten Link",
+      "email": "torstenlink@gmx.de"
+    },
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
   "license": "BSD-2-Clause",
   "engines": {
     "node": ">=4.2.1"
