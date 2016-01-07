@@ -121,3 +121,9 @@
 [submodule "kronos-service-admin"]
 	path = kronos-service-admin
 	url = https://github.com/Kronos-Integration/kronos-service-admin.git
+[submodule "kronos-interceptor-message-handler"]
+	path = kronos-interceptor-message-handler
+	url = https://github.com/Kronos-Integration/kronos-interceptor-message-handler.git
+[submodule "kronos-test-interceptor"]
+	path = kronos-test-interceptor
+	url = https://github.com/Kronos-Integration/kronos-test-interceptor.git
