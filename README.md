@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/Kronos-Integration/kronos-main.png?label=ready&title=Ready)](https://waffle.io/Kronos-Integration/kronos-main)
 # kronos-main [![NPM version](https://badge.fury.io/js/kronos-main.svg)](http://badge.fury.io/js/kronos-main)  [![Build Status](https://travis-ci.org/Kronos-Integration/kronos-main.svg)](https://travis-ci.org/Kronos-Integration/kronos-main)
 
 > Base step implementation
