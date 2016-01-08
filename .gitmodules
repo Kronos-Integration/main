@@ -19,9 +19,6 @@
 [submodule "kronos-adapter-outbound-file"]
 	path = kronos-adapter-outbound-file
 	url = https://github.com/Kronos-Integration/kronos-adapter-outbound-file.git
-[submodule "kronos-service-manager-consul"]
-	path = kronos-service-manager-consul
-	url = https://github.com/Kronos-Integration/kronos-service-manager-consul.git
 [submodule "kronos-step-data-processor-csv"]
 	path = kronos-step-data-processor-csv
 	url = https://github.com/Kronos-Integration/kronos-step-data-processor-csv.git
@@ -49,9 +46,6 @@
 [submodule "stream-object-data-processor-row"]
 	path = stream-object-data-processor-row
 	url = https://github.com/Kronos-Integration/stream-object-data-processor-row.git
-[submodule "kronos-service-manager-admin"]
-	path = kronos-service-manager-admin
-	url = https://github.com/Kronos-Integration/kronos-service-manager-admin.git
 [submodule "kronos-cluster-node"]
 	path = kronos-cluster-node
 	url = https://github.com/Kronos-Integration/kronos-cluster-node.git
@@ -109,9 +103,6 @@
 [submodule "kronos-koa-service"]
 	path = kronos-koa-service
 	url = https://github.com/Kronos-Integration/kronos-koa-service.git
-[submodule "kronos-health-check-service"]
-	path = kronos-health-check-service
-	url = https://github.com/Kronos-Integration/kronos-health-check-service.git
 [submodule "kronos-service-consul"]
 	path = kronos-service-consul
 	url = https://github.com/Kronos-Integration/kronos-service-consul.git
@@ -127,3 +118,6 @@
 [submodule "kronos-test-interceptor"]
 	path = kronos-test-interceptor
 	url = https://github.com/Kronos-Integration/kronos-test-interceptor.git
+[submodule "kronos-service-health-check"]
+	path = kronos-service-health-check
+	url = https://github.com/Kronos-Integration/kronos-service-health-check.git
