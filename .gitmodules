@@ -100,9 +100,6 @@
 [submodule "kronos-step-file"]
 	path = kronos-step-file
 	url = https://github.com/Kronos-Integration/kronos-step-file.git
-[submodule "kronos-koa-service"]
-	path = kronos-koa-service
-	url = https://github.com/Kronos-Integration/kronos-koa-service.git
 [submodule "kronos-service-consul"]
 	path = kronos-service-consul
 	url = https://github.com/Kronos-Integration/kronos-service-consul.git
