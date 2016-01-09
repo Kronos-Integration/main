@@ -1,8 +1,7 @@
 {
   "name": "kronos-main",
   "version": "0.0.0",
-  "description": "Base step implementation",
-  "main": "lib/adapter-outbound-file.js",
+  "description": "Umbrella for all Kronos modules",
   "scripts": {
     "cover": "node ./node_modules/istanbul/lib/cli.js cover --hook-run-in-context ./node_modules/mocha/bin/_mocha -- --R spec --U exports tests",
     "doc": "jsdoc lib/*.js",
