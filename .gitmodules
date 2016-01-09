@@ -121,3 +121,6 @@
 [submodule "kronos-service-health-check"]
 	path = kronos-service-health-check
 	url = https://github.com/Kronos-Integration/kronos-service-health-check.git
+[submodule "kronos-service-koa"]
+	path = kronos-service-koa
+	url = https://github.com/Kronos-Integration/kronos-service-koa.git
