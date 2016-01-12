@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+
+BRANCH="api_rework"
+SUBMODULES="kronos-service kronos-service-koa kronos-service-health-check kronos-service-admin kronos-service-consul kronos-service-manager"
+
+for i in $SUBMODULES
+do
+  (cd $i
+  git checkout $BRANCH
+  git pull origin $BRANCH
+  cd node_modules
+  for s in $SUBMODULES
+  do
+    rm -rf $s
+    if [ $s != $i ]
+      then
+        ln -s ../../$s .
+      fi
+  done
+  )
+done
