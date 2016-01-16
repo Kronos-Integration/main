@@ -4,10 +4,18 @@
 for i in $(git submodule foreach --quiet 'echo $path')
 do
   (cd $i
-#   echo ".npmignore" >> .npmignore
-#   git add .npmignore
-#   git commit -m 'chore(npm): ignore .npmignore'
-#   git push
+   git push
   )
 done
+
+exit
+
+   perl -i -pe 's/^\[\!\[Coverage\s+Status.*\n$//' README.md
+   git add README.md 
+   git commit -m 'doc(readme): remove coveralls'
+
+
+   perl -i -pe 's/^.*coveralls.js\n$//' .travis.yml
+   git add .travis.yml
+   git commit -m 'chore(travis): remove coveralls'
 
