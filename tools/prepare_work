@@ -9,7 +9,8 @@ do
   (cd $i
   git checkout $BRANCH
   git pull origin $BRANCH
-  cd node_modules
+  (mkdir -p node_modules
+   cd node_modules
   for s in $SUBMODULES
   do
     rm -rf $s
@@ -18,5 +19,6 @@ do
         ln -s ../../$s .
       fi
   done
+  )
   )
 done
