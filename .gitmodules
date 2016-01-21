@@ -112,3 +112,15 @@
 [submodule "kronos-endpoint"]
 	path = kronos-endpoint
 	url = https://github.com/Kronos-Integration/kronos-endpoint.git
+[submodule "kronos-interceptor-line-tokens2obj"]
+	path = kronos-interceptor-line-tokens2obj
+	url = https://github.com/Kronos-Integration/kronos-interceptor-line-tokens2obj.git
+[submodule "kronos-interceptor-line-tokenizer-csv"]
+	path = kronos-interceptor-line-tokenizer-csv
+	url = https://github.com/Kronos-Integration/kronos-interceptor-line-tokenizer-csv.git
+[submodule "kronos-interceptor-line-parser"]
+	path = kronos-interceptor-line-parser
+	url = https://github.com/Kronos-Integration/kronos-interceptor-line-parser.git
+[submodule "kronos-interceptor-line-header"]
+	path = kronos-interceptor-line-header
+	url = https://github.com/Kronos-Integration/kronos-interceptor-line-header.git
