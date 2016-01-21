@@ -28,18 +28,6 @@
 [submodule "kronos-step-passthrough"]
 	path = kronos-step-passthrough
 	url = https://github.com/Kronos-Integration/kronos-step-passthrough.git
-[submodule "stream-line-header"]
-	path = stream-line-header
-	url = https://github.com/Kronos-Integration/stream-line-header.git
-[submodule "stream-line-parser"]
-	path = stream-line-parser
-	url = https://github.com/Kronos-Integration/stream-line-parser.git
-[submodule "stream-line-tokenizer-csv"]
-	path = stream-line-tokenizer-csv
-	url = https://github.com/Kronos-Integration/stream-line-tokenizer-csv.git
-[submodule "stream-line-tokens2obj"]
-	path = stream-line-tokens2obj
-	url = https://github.com/Kronos-Integration/stream-line-tokens2obj.git
 [submodule "stream-object-data-processor-chunk"]
 	path = stream-object-data-processor-chunk
 	url = https://github.com/Kronos-Integration/stream-object-data-processor-chunk.git
