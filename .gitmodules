@@ -124,3 +124,6 @@
 [submodule "kronos-interceptor-line-header"]
 	path = kronos-interceptor-line-header
 	url = https://github.com/Kronos-Integration/kronos-interceptor-line-header.git
+[submodule "kronos-service-uti"]
+	path = kronos-service-uti
+	url = https://github.com/Kronos-Integration/kronos-service-uti.git
