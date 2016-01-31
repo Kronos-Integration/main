@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Kronos-Integration/kronos-main#readme",
   "devDependencies": {
-    "asciidoctor.js": "^1.5.3",
+    "asciidoctor.js": "^1.5.4",
     "broccoli": "^0.16.9",
     "broccoli-funnel": "^1.0.1",
     "broccoli-merge-trees": "^1.1.1",
