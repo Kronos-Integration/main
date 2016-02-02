@@ -79,9 +79,6 @@
 [submodule "kronos-service-manager-ui"]
 	path = kronos-service-manager-ui
 	url = https://github.com/Kronos-Integration/kronos-service-manager-ui.git
-[submodule "kronos-step-logger"]
-	path = kronos-step-logger
-	url = https://github.com/Kronos-Integration/kronos-step-logger.git
 [submodule "kronos-adapter-inbound-http-graphql-admin"]
 	path = kronos-adapter-inbound-http-graphql-admin
 	url = https://github.com/Kronos-Integration/kronos-adapter-inbound-http-graphql-admin.git
