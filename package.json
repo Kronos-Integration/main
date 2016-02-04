@@ -24,6 +24,7 @@
     "keychain": "^1.0.0",
     "node-github": "0.0.3",
     "octokat": "^0.4.16",
+    "github-change-remote-file": "^1.1.0",
     "verb": "^0.8.10"
   },
   "contributors": [
