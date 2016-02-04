@@ -37,8 +37,8 @@ keychain.getPassword({
 
 function work(token) {
   githubChangeRemoteFile({
-    user: 'arlac77',
-    repo: 'expression-expander',
+    user: 'Kronos-Integration',
+    repo: 'kronos-service-manager',
     filename: 'package.json',
     transform: pkg => {
       pkg = JSON.parse(pkg);
@@ -81,7 +81,7 @@ function work(token) {
           pkg.keywords.push('kronos-step');
         }
       }
-      if (pkg.name.match(/^kronos-service.+/)) {
+      if (pkg.name.match(/^kronos-service.+/) && !pkg.name.match(/^kronos-service-manager/)) {
         if (!pkg.keywords.find(k => k === 'kronos-service')) {
           pkg.keywords.push('kronos-service');
         }
