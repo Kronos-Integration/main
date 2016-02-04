@@ -1,0 +1,104 @@
+#!/usr/bin/env node
+
+/* jslint node: true, esnext: true */
+
+"use strict";
+
+const githubChangeRemoteFile = require('github-change-remote-file'),
+  keychain = require('keychain');
+
+let account = "arlac77";
+let service = 'github_token';
+
+/*
+keychain.setPassword({
+  account: account,
+  service: service,
+  password: 'xxxxxx'
+}, function (err, pass) {
+  if (err) {
+    console.log(`${err}`);
+    return;
+  }
+  console.log('password set');
+});
+*/
+
+keychain.getPassword({
+  account: account,
+  service: service
+}, function (err, pass) {
+  if (err) {
+    console.log(`${err}`);
+    return;
+  }
+  work(pass);
+});
+
+function work(token) {
+  githubChangeRemoteFile({
+    user: 'arlac77',
+    repo: 'expression-expander',
+    filename: 'package.json',
+    transform: pkg => {
+      pkg = JSON.parse(pkg);
+
+      if (pkg.version === '0.0.0') {
+        pkg.version = '0.0.0-semantic-release';
+      }
+
+      if (pkg.release && pkg.release.debug === false) {
+        delete pkg.release;
+      }
+
+      pkg.devDependencies['semantic-release'] = '6.2.0';
+      pkg.devDependencies['chai'] = '3.5.0';
+      pkg.devDependencies['mocha'] = '2.4.5';
+      pkg.devDependencies['jsdoc'] = '3.4.0';
+      pkg.devDependencies['istanbul'] = '0.4.2';
+
+      pkg.scripts['semantic-release'] = "semantic-release pre && npm publish && semantic-release post";
+      pkg.scripts['doc'] = "jsdoc lib/*.js";
+      pkg.scripts['test'] = "mocha tests/*_test.js";
+      pkg.scripts['cover'] =
+        "node ./node_modules/istanbul/lib/cli.js cover --hook-run-in-context ./node_modules/mocha/bin/_mocha -- --R spec --U exports tests/*_test.js";
+
+      pkg.engines = {
+        node: ">=5"
+      };
+
+      if (pkg.keywords === undefined) {
+        pkg.keywords = [];
+      }
+
+      if (pkg.name.match(/^kronos-interceptor.+/)) {
+        if (!pkg.keywords.find(k => k === 'kronos-interceptor')) {
+          pkg.keywords.push('kronos-interceptor');
+        }
+      }
+      if (pkg.name.match(/^kronos-step.+/)) {
+        if (!pkg.keywords.find(k => k === 'kronos-step')) {
+          pkg.keywords.push('kronos-step');
+        }
+      }
+      if (pkg.name.match(/^kronos-service.+/)) {
+        if (!pkg.keywords.find(k => k === 'kronos-service')) {
+          pkg.keywords.push('kronos-service');
+        }
+      }
+
+      return JSON.stringify(pkg, undefined, 2);
+    },
+    token: token,
+    pr: {
+      title: 'chore(npm): sync package.json from npm-package-template',
+      body: 'engines, version, release scripts for semantic-release, mocha, jsdoc and istanbul'
+    }
+  }, (err, res) => {
+    if (err) {
+      console.log(err)
+    } else {
+      console.log(res.html_url);
+    }
+  });
+}
