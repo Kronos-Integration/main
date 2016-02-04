@@ -130,3 +130,6 @@
 [submodule "kronos-interceptor-stream-obj2string"]
 	path = kronos-interceptor-stream-obj2string
 	url = https://github.com/Kronos-Integration/kronos-interceptor-stream-obj2string.git
+[submodule "kronos-interceptor-object-data-processor-row"]
+	path = kronos-interceptor-object-data-processor-row
+	url = https://github.com/Kronos-Integration/kronos-interceptor-object-data-processor-row.git
