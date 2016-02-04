@@ -127,3 +127,6 @@
 [submodule "kronos-interceptor-object-data-processor-chunk"]
 	path = kronos-interceptor-object-data-processor-chunk
 	url = https://github.com/Kronos-Integration/kronos-interceptor-object-data-processor-chunk.git
+[submodule "kronos-interceptor-stream-obj2string"]
+	path = kronos-interceptor-stream-obj2string
+	url = https://github.com/Kronos-Integration/kronos-interceptor-stream-obj2string.git
