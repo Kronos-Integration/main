@@ -124,3 +124,6 @@
 [submodule "kronos-service-uti"]
 	path = kronos-service-uti
 	url = https://github.com/Kronos-Integration/kronos-service-uti.git
+[submodule "kronos-interceptor-object-data-processor-chunk"]
+	path = kronos-interceptor-object-data-processor-chunk
+	url = https://github.com/Kronos-Integration/kronos-interceptor-object-data-processor-chunk.git
