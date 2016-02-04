@@ -2,7 +2,7 @@
 
 "use strict";
 
-const GitHubApi = require("node-github"),
+const //GitHubApi = require("node-github"),
   Octokat = require('octokat'),
   keychain = require('keychain'),
   spawn = require('child_process').spawnSync;
