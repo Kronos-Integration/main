@@ -133,3 +133,6 @@
 [submodule "kronos-interceptor-object-data-processor-row"]
 	path = kronos-interceptor-object-data-processor-row
 	url = https://github.com/Kronos-Integration/kronos-interceptor-object-data-processor-row.git
+[submodule "kronos-service-registry"]
+	path = kronos-service-registry
+	url = https://github.com/Kronos-Integration/kronos-service-registry.git
