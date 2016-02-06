@@ -7,8 +7,10 @@
 const githubChangeRemoteFile = require('github-change-remote-file'),
   keychain = require('keychain');
 
-let account = "arlac77";
-let service = 'github_token';
+const account = "arlac77";
+const service = 'github_token';
+const user = 'Kronos-Integration';
+const repo = 'kronos-service-manager';
 
 /*
 keychain.setPassword({
@@ -35,13 +37,23 @@ keychain.getPassword({
   work(pass);
 });
 
+
 function work(token) {
   githubChangeRemoteFile({
-    user: 'Kronos-Integration',
-    repo: 'kronos-cluster-node',
+    user: user,
+    repo: repo,
     filename: 'package.json',
     transform: pkg => {
       pkg = JSON.parse(pkg);
+
+      pkg.repository = {
+        "type": "git",
+        "url": `git+https://github.com/${user}/${repo}.git`
+      };
+      pkg.bugs = {
+        "url": `https://github.com/${user}/${repo}/issues`
+      };
+      pkg.homepage = `https://github.com/${user}/${repo}#readme`;
 
       if (pkg.version === '0.0.0') {
         pkg.version = '0.0.0-semantic-release';
