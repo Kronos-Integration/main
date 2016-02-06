@@ -7,10 +7,13 @@
 const githubChangeRemoteFile = require('github-change-remote-file'),
   keychain = require('keychain');
 
-const account = "arlac77";
-const service = 'github_token';
+const keystore = {
+  account: "arlac77",
+  service: 'github_token'
+};
+
 const user = 'Kronos-Integration';
-const repo = 'kronos-service-manager';
+const repo = 'kronos-service';
 
 /*
 keychain.setPassword({
@@ -26,10 +29,7 @@ keychain.setPassword({
 });
 */
 
-keychain.getPassword({
-  account: account,
-  service: service
-}, function (err, pass) {
+keychain.getPassword(keystore, (err, pass) => {
   if (err) {
     console.log(`${err}`);
     return;
