@@ -13,9 +13,6 @@
 [submodule "kronos-adapter-inbound-file"]
 	path = kronos-adapter-inbound-file
 	url = https://github.com/Kronos-Integration/kronos-adapter-inbound-file.git
-[submodule "kronos-adapter-inbound-http"]
-	path = kronos-adapter-inbound-http
-	url = https://github.com/Kronos-Integration/kronos-adapter-inbound-http.git
 [submodule "kronos-adapter-outbound-file"]
 	path = kronos-adapter-outbound-file
 	url = https://github.com/Kronos-Integration/kronos-adapter-outbound-file.git
@@ -55,9 +52,6 @@
 [submodule "kronos-step-system"]
 	path = kronos-step-system
 	url = https://github.com/Kronos-Integration/kronos-step-system.git
-[submodule "kronos-adapter-inbound-http-file"]
-	path = kronos-adapter-inbound-http-file
-	url = https://github.com/Kronos-Integration/kronos-adapter-inbound-http-file.git
 [submodule "bidi-endpoints-playground"]
 	path = bidi-endpoints-playground
 	url = https://github.com/Kronos-Integration/bidi-endpoints-playground.git
