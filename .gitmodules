@@ -22,12 +22,6 @@
 [submodule "kronos-step-passthrough"]
 	path = kronos-step-passthrough
 	url = https://github.com/Kronos-Integration/kronos-step-passthrough.git
-[submodule "stream-object-data-processor-chunk"]
-	path = stream-object-data-processor-chunk
-	url = https://github.com/Kronos-Integration/stream-object-data-processor-chunk.git
-[submodule "stream-object-data-processor-row"]
-	path = stream-object-data-processor-row
-	url = https://github.com/Kronos-Integration/stream-object-data-processor-row.git
 [submodule "kronos-cluster-node"]
 	path = kronos-cluster-node
 	url = https://github.com/Kronos-Integration/kronos-cluster-node.git
