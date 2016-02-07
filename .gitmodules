@@ -16,9 +16,6 @@
 [submodule "kronos-adapter-outbound-file"]
 	path = kronos-adapter-outbound-file
 	url = https://github.com/Kronos-Integration/kronos-adapter-outbound-file.git
-[submodule "kronos-step-data-processor-csv"]
-	path = kronos-step-data-processor-csv
-	url = https://github.com/Kronos-Integration/kronos-step-data-processor-csv.git
 [submodule "kronos-step-gzip"]
 	path = kronos-step-gzip
 	url = https://github.com/Kronos-Integration/kronos-step-gzip.git
