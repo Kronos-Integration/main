@@ -124,3 +124,6 @@
 [submodule "kronos-interceptor-http-request"]
 	path = kronos-interceptor-http-request
 	url = https://github.com/Kronos-Integration/kronos-interceptor-http-request.git
+[submodule "kronos-adapter-outbound-http"]
+	path = kronos-adapter-outbound-http
+	url = https://github.com/Kronos-Integration/kronos-adapter-outbound-http.git
