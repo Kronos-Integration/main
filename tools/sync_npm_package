@@ -13,7 +13,7 @@ const keystore = {
 };
 
 const user = 'Kronos-Integration';
-const repo = 'kronos-service';
+const repo = 'kronos-adapter-outbound-http';
 
 /*
 keychain.setPassword({
@@ -91,7 +91,7 @@ function work(token) {
           pkg.keywords.push('kronos-interceptor');
         }
       }
-      if (pkg.name.match(/^kronos-step.+/)) {
+      if (pkg.name.match(/^kronos-step.+/) || pkg.name.match(/^kronos-adapter.+/)) {
         if (!pkg.keywords.find(k => k === 'kronos-step')) {
           pkg.keywords.push('kronos-step');
         }
@@ -118,7 +118,7 @@ function work(token) {
     }
   }, (err, res) => {
     if (err) {
-      console.log(err)
+      console.log(err);
     } else {
       console.log(res.html_url);
     }
