@@ -91,7 +91,7 @@ function work(token) {
       },
       token: token,
       pr: {
-        title: 'chore(npm): sync README.md from npm-package-template',
+        title: 'docs(readme): sync README.md from npm-package-template',
         body: 'badges'
       }
     }, (err, res) => {
