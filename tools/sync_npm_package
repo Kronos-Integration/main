@@ -9,8 +9,8 @@ const githubChangeRemoteFile = require('github-change-remote-file'),
   keychain = require('keychain');
 
 
-let readme = true;
-let package_json = false;
+let readme = false;
+let package_json = true;
 
 commander
   .option('-k, --keystore [account/service]', 'keystore')
@@ -112,7 +112,7 @@ function work(token) {
 
         pkg.repository = {
           "type": "git",
-          "url": `git+https://github.com/${user}/${repo}.git`
+          "url": `https://github.com/${user}/${repo}.git`
         };
         pkg.bugs = {
           "url": `https://github.com/${user}/${repo}/issues`
