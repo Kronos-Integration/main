@@ -6,11 +6,13 @@
 
 const githubChangeRemoteFile = require('github-change-remote-file'),
   commander = require('commander'),
+  yaml = require('js-yaml'),
   keychain = require('keychain');
 
 
 let readme = false;
-let package_json = true;
+let package_json = false;
+let travis_yml = true;
 
 commander
   .option('-k, --keystore [account/service]', 'keystore')
@@ -29,7 +31,7 @@ if (commander.keystore) {
 }
 
 let user = 'Kronos-Integration';
-let repo = 'kronos-adapter-outbound-http';
+let repo = 'kronos-main';
 
 if (commander.repo) {
   const v = commander.repo.split(/\//);
@@ -81,7 +83,6 @@ function work(token) {
 [![downloads](http://img.shields.io/npm/dm/{{name}}.svg?style=flat-square)](https://npmjs.org/package/{{name}})
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 `;
-
 
         const lines = readme.split(/\n/);
         let fel = lines.findIndex(l => l.length === 0);
@@ -182,6 +183,42 @@ function work(token) {
       pr: {
         title: 'chore(npm): sync package.json from npm-package-template',
         body: 'engines, version, release scripts for semantic-release, mocha, jsdoc and istanbul'
+      }
+    }, (err, res) => {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log(res.html_url);
+      }
+    });
+
+  if (travis_yml)
+    githubChangeRemoteFile({
+      user: user,
+      repo: repo,
+      filename: '.travis.yml',
+      transform: content => {
+        const yml = yaml.safeLoad(content);
+
+        yml.node_js = [
+          5
+        ];
+
+        yml.before_script = [
+          'npm prune',
+          'npm install -g codecov'
+        ];
+
+        yml.after_script = [
+          'codecov'
+        ];
+
+        return yaml.safeDump(yml);
+      },
+      token: token,
+      pr: {
+        title: 'chore(travis): sync .travis.yml from npm-package-template',
+        body: 'update before_script, after_script'
       }
     }, (err, res) => {
       if (err) {
