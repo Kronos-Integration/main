@@ -204,6 +204,18 @@ function work(token) {
           5
         ];
 
+        if (yml.branches === undefined) {
+          yml.branches = {};
+        }
+
+        yml.branches.only = [
+          'master'
+        ];
+
+        yml.before_install = [
+          'npm i -g npm@latest'
+        ];
+
         yml.before_script = [
           'npm prune',
           'npm install -g codecov'
@@ -213,12 +225,21 @@ function work(token) {
           'codecov'
         ];
 
+        if (yml.notifications === undefined) {
+          yml.notifications = {};
+        }
+
+        yml.notifications.email = [
+          'torstenlink@gmx.de',
+          'markus.felten@gmx.de'
+        ];
+
         return yaml.safeDump(yml);
       },
       token: token,
       pr: {
         title: 'chore(travis): sync .travis.yml from npm-package-template',
-        body: 'update before_script, after_script'
+        body: 'update before_script, after_script, before_install'
       }
     }, (err, res) => {
       if (err) {
