@@ -127,3 +127,6 @@
 [submodule "kronos-adapter-outbound-http"]
 	path = kronos-adapter-outbound-http
 	url = https://github.com/Kronos-Integration/kronos-adapter-outbound-http.git
+[submodule "kronos-step-aggregate"]
+	path = kronos-step-aggregate
+	url = https://github.com/Kronos-Integration/kronos-step-aggregate.git
