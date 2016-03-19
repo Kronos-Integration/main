@@ -10,12 +10,13 @@ const githubChangeRemoteFile = require('github-change-remote-file'),
   keychain = require('keychain');
 
 
-let readme = false;
+let readme = true;
 let package_json = false;
-let travis_yml = true;
+let travis_yml = false;
 
 commander
   .option('-k, --keystore [account/service]', 'keystore')
+  .option('-s, --save', 'save keystore')
   .option('-r, --repo [user/repo]', 'repo')
   .parse(process.argv);
 
@@ -30,6 +31,7 @@ if (commander.keystore) {
   keystore.service = v[1];
 }
 
+
 let user = 'Kronos-Integration';
 let repo = 'kronos-main';
 
@@ -39,19 +41,21 @@ if (commander.repo) {
   repo = v[1];
 }
 
-/*
-keychain.setPassword({
-  account: account,
-  service: service,
-  password: 'xxxxxx'
-}, function (err, pass) {
-  if (err) {
-    console.log(`${err}`);
-    return;
-  }
-  console.log('password set');
-});
-*/
+if (commander.save) {
+  keychain.setPassword({
+    account: keystore.account,
+    service: keystore.service,
+    password: 'xxx'
+  }, function (err, pass) {
+    if (err) {
+      console.log(`${err}`);
+      return;
+    }
+    console.log('password set');
+  });
+
+  return;
+}
 
 keychain.getPassword(keystore, (err, pass) => {
   if (err) {
