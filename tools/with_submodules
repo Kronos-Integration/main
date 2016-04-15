@@ -4,10 +4,16 @@
 for i in $(git submodule foreach --quiet 'echo $path')
 do
   (cd $i
+  rm -rf node_modules
+  npm install
   )
 done
 
 exit
+---
+rm -rf node_modules
+npm install
+
 ---
 grep '"semantic-release": "6.2.1"' package.json >/dev/null
 if [ $? -eq 1 ]; then
