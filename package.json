@@ -22,19 +22,22 @@
     "broccoli-funnel": "^1.0.1",
     "broccoli-merge-trees": "^1.1.1",
     "github-change-remote-file": "^1.1.0",
-    "js-yaml": "^3.5.3",
+    "js-yaml": "^3.5.5",
     "keychain": "^1.0.0",
     "node-github": "0.0.3",
-    "octokat": "^0.4.16",
+    "octokat": "^0.4.17",
     "verb": "^0.8.10"
   },
-  "contributors": [{
-    "name": "Torsten Link",
-    "email": "torstenlink@gmx.de"
-  }, {
-    "name": "Markus Felten",
-    "email": "markus.felten@gmx.de"
-  }],
+  "contributors": [
+    {
+      "name": "Torsten Link",
+      "email": "torstenlink@gmx.de"
+    },
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
   "license": "BSD-2-Clause",
   "engines": {
     "node": ">=4.2.1"
