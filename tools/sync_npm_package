@@ -2,7 +2,7 @@
 
 /* jslint node: true, esnext: true */
 
-"use strict";
+'use strict';
 
 const githubChangeRemoteFile = require('github-change-remote-file'),
   commander = require('commander'),
@@ -21,7 +21,7 @@ commander
   .parse(process.argv);
 
 const keystore = {
-  account: "arlac77",
+  account: 'arlac77',
   service: 'github_token'
 };
 
@@ -116,11 +116,11 @@ function work(token) {
         pkg = JSON.parse(pkg);
 
         pkg.repository = {
-          "type": "git",
-          "url": `https://github.com/${user}/${repo}.git`
+          type: 'git',
+          url: `https://github.com/${user}/${repo}.git`
         };
         pkg.bugs = {
-          "url": `https://github.com/${user}/${repo}/issues`
+          url: `https://github.com/${user}/${repo}/issues`
         };
         pkg.homepage = `https://github.com/${user}/${repo}#readme`;
 
@@ -149,10 +149,10 @@ function work(token) {
         });
 
         pkg.engines = {
-          node: ">=5"
+          node: '>=5'
         };
 
-        pkg.license = "BSD-2-Clause";
+        pkg.license = 'BSD-2-Clause';
 
         if (pkg.keywords === undefined) {
           pkg.keywords = [];
@@ -178,7 +178,7 @@ function work(token) {
           pkg.config = {};
         }
         pkg.config.commitizen = {
-          "path": "./node_modules/cz-conventional-changelog"
+          'path': './node_modules/cz-conventional-changelog'
         };
 
         return JSON.stringify(pkg, undefined, 2);
