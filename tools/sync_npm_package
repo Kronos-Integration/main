@@ -10,9 +10,9 @@ const githubChangeRemoteFile = require('github-change-remote-file'),
   keychain = require('keychain');
 
 
-let readme = true;
-let package_json = false;
-let travis_yml = false;
+let readme = false;
+let package_json = true;
+let travis_yml = true;
 
 commander
   .option('-k, --keystore [account/service]', 'keystore')
@@ -149,7 +149,7 @@ function work(token) {
         });
 
         pkg.engines = {
-          node: '>=5'
+          node: '>=6'
         };
 
         pkg.license = 'BSD-2-Clause';
@@ -205,7 +205,7 @@ function work(token) {
         const yml = yaml.safeLoad(content);
 
         yml.node_js = [
-          5
+          6
         ];
 
         if (yml.branches === undefined) {
