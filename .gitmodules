@@ -130,3 +130,6 @@
 [submodule "kronos-step-aggregate"]
 	path = kronos-step-aggregate
 	url = https://github.com/Kronos-Integration/kronos-step-aggregate.git
+[submodule "kronos-interceptor-decode-json"]
+	path = kronos-interceptor-decode-json
+	url = https://github.com/Kronos-Integration/kronos-interceptor-decode-json.git
