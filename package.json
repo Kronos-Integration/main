@@ -22,7 +22,7 @@
     "broccoli-funnel": "^1.0.1",
     "broccoli-merge-trees": "^1.1.1",
     "github-change-remote-file": "^1.1.0",
-    "js-yaml": "^3.5.5",
+    "js-yaml": "^3.6.1",
     "keychain": "^1.0.0",
     "node-github": "0.0.3",
     "octokat": "^0.4.17",
