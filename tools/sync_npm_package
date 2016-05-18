@@ -149,7 +149,7 @@ function work(token) {
         });
 
         pkg.engines = {
-          node: '>=6.1'
+          node: '>=6.2'
         };
 
         pkg.license = 'BSD-2-Clause';
