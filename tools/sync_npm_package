@@ -10,9 +10,9 @@ const githubChangeRemoteFile = require('github-change-remote-file'),
   keychain = require('keychain');
 
 
-let readme = false;
-let package_json = true;
-let travis_yml = true;
+let readme = true;
+let package_json = false;
+let travis_yml = false;
 
 commander
   .option('-k, --keystore [account/service]', 'keystore')
@@ -133,7 +133,7 @@ function work(token) {
         }
 
         Object.assign(pkg.devDependencies, {
-          'semantic-release': '6.2.2',
+          'semantic-release': '6.3.0',
           'chai': '3.5.0',
           'mocha': '2.5.3',
           'jsdoc': '3.4.0',
