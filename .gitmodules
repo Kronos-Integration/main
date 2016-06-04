@@ -133,3 +133,6 @@
 [submodule "kronos-interceptor-decode-json"]
 	path = kronos-interceptor-decode-json
 	url = https://github.com/Kronos-Integration/kronos-interceptor-decode-json.git
+[submodule "kronos-service-logger-gelf"]
+	path = kronos-service-logger-gelf
+	url = https://github.com/Kronos-Integration/kronos-service-logger-gelf.git
