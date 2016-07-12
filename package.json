@@ -19,7 +19,7 @@
   "devDependencies": {
     "asciidoctor.js": "1.5.5-1",
     "broccoli": "^0.16.9",
-    "broccoli-funnel": "^1.0.2",
+    "broccoli-funnel": "^1.0.3",
     "broccoli-merge-trees": "^1.1.1",
     "github-change-remote-file": "^1.1.0",
     "js-yaml": "^3.6.1",
