@@ -3,19 +3,29 @@
 
 for i in $(git submodule foreach --quiet 'echo $path')
 do
-  (cd $i
-   #git push
-   greenkeeper enable
-  )
+  (
+  git add $i
+)
 done
 
 exit
+---
+git pull
+sed -i '' 's/  - 6.[012].*/  - 6.2/' .travis.yml
+git add .travis.yml
+git commit -m 'chore(travis): build with node 6.3.1'
+git push
+
+---
+greenkeeper enable
+---
+gitcleen
 ---
 rm -rf node_modules
 npm install
 
 ---
-grep '"semantic-release": "6.2.2"' package.json >/dev/null
+grep '"semantic-release": "6.3.0"' package.json >/dev/null
 if [ $? -eq 1 ]; then
   echo $i
   grep '"semantic-release": "6.2' package.json >/dev/null
@@ -29,10 +39,12 @@ if [ $? -eq 1 ]; then
   fi
 fi
 ---
-sed -i '' 's/  - 4.2/  - 5/' .travis.yml
+( cd $i
+sed -i '' 's/  - 6.[012].*/  - 6.2.1/' .travis.yml
 git add .travis.yml
-git commit -m 'chore(travis): build with node 5'
+git commit -m 'chore(travis): build with node 6.2.1'
 git push
+)
 ---
 perl -i -pe 's/^\[\!\[Coverage\s+Status.*\n$//' README.md
 git add README.md
