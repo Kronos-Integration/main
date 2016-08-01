@@ -4,8 +4,8 @@
 for i in $(git submodule foreach --quiet 'echo $path')
 do
   (cd $i
-  rm -rf node_modules
-  npm install
+   #git push
+   greenkeeper enable
   )
 done
 
@@ -15,14 +15,14 @@ rm -rf node_modules
 npm install
 
 ---
-grep '"semantic-release": "6.2.1"' package.json >/dev/null
+grep '"semantic-release": "6.2.2"' package.json >/dev/null
 if [ $? -eq 1 ]; then
   echo $i
-  grep '"semantic-release": "6.' package.json >/dev/null
+  grep '"semantic-release": "6.2' package.json >/dev/null
   if [ $? -eq 0 ]; then
-    npm install --save-dev --save-exact semantic-release@6.2.1
+    npm install --save-dev --save-exact semantic-release@6.3.0
     git add package.json
-    git commit -m 'chore(dependency): semantic-release@6.2.1'
+    git commit -m 'chore(dependency): semantic-release@6.3.0'
     git push
   else
     echo "*** check $i"
