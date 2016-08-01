@@ -21,18 +21,18 @@
     "broccoli": "^0.16.9",
     "broccoli-funnel": "^1.0.3",
     "broccoli-merge-trees": "^1.1.2",
+    "chai": "3.5.0",
+    "cz-conventional-changelog": "1.1.6",
     "github-change-remote-file": "^1.1.0",
+    "istanbul": "0.4.4",
     "js-yaml": "^3.6.1",
+    "jsdoc": "3.4.0",
     "keychain": "^1.0.0",
+    "mocha": "3.0.0",
     "node-github": "0.0.3",
     "octokat": "^0.4.17",
-    "verb": "^0.8.10",
     "semantic-release": "6.2.2",
-    "chai": "3.5.0",
-    "mocha": "2.5.3",
-    "jsdoc": "3.4.0",
-    "istanbul": "0.4.4",
-    "cz-conventional-changelog": "1.1.6"
+    "verb": "^0.8.10"
   },
   "contributors": [
     {
