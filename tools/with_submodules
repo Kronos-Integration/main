@@ -5,12 +5,12 @@ for i in $(git submodule foreach --quiet 'echo $path')
 do
   (
   cd $i
-  grep '"mocha": "2."' package.json >/dev/null
+  grep '"mocha": "3.0.0"' package.json >/dev/null
   if [ $? -eq 1 ]; then
     echo $i
-    npm install --save-dev --save-exact mocha@3.0.0
+    npm install --save-dev --save-exact mocha@3.0.1
     git add package.json
-    git commit -m 'chore(dependency): mocha@3.0.0'
+    git commit -m 'chore(dependency): mocha@3.0.1'
     git push
   fi
 )
