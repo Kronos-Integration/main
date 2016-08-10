@@ -23,7 +23,7 @@
     "broccoli-merge-trees": "^1.1.4",
     "chai": "3.5.0",
     "cz-conventional-changelog": "1.1.7",
-    "github-change-remote-file": "^1.1.0",
+    "github-change-remote-file": "^4.1.0",
     "istanbul": "0.4.4",
     "js-yaml": "^3.6.1",
     "jsdoc": "3.4.0",
