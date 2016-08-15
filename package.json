@@ -30,7 +30,7 @@
     "keychain": "^1.0.0",
     "mocha": "3.0.2",
     "node-github": "0.0.3",
-    "octokat": "^0.4.17",
+    "octokat": "^0.4.18",
     "semantic-release": "6.2.2",
     "verb": "^0.8.10"
   },
