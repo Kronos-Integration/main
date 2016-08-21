@@ -24,7 +24,7 @@
     "chai": "3.5.0",
     "cz-conventional-changelog": "1.2.0",
     "github-change-remote-file": "^4.2.0",
-    "istanbul": "0.4.4",
+    "istanbul": "0.4.5",
     "js-yaml": "^3.6.1",
     "jsdoc": "3.4.0",
     "keychain": "^1.0.0",
