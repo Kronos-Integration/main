@@ -137,7 +137,7 @@ function work(token) {
           'chai': '3.5.0',
           'mocha': '3.0.2',
           'jsdoc': '3.4.0',
-          'istanbul': '0.4.4',
+          'istanbul': '0.4.5',
           'cz-conventional-changelog': '1.2.0'
         });
 
