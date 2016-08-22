@@ -5,14 +5,11 @@ for i in $(git submodule foreach --quiet 'echo $path')
 do
   (
   cd $i
-  grep '"cz-conventional-changelog": "1.1.7"' package.json >/dev/null
-  if [ $? -eq 1 ]; then
-    echo $i
-    npm install --save-dev --save-exact cz-conventional-changelog@1.2.0
-    git add package.json
-    git commit -m 'chore(dependency): cz-conventional-changelog@1.2.0'
-    git push
-  fi
+  git pull
+  sed -i '' 's/  - 6.[0123].*/  - 6.4/' .travis.yml
+  git add .travis.yml
+  git commit -m 'chore(travis): build with node 6.4'
+  git push
 )
 done
 
@@ -39,11 +36,10 @@ if [ $? -eq 1 ]; then
 fi
 ---
 git pull
-sed -i '' 's/  - 6.[012].*/  - 6.2/' .travis.yml
+sed -i '' 's/  - 6.[0123].*/  - 6.4/' .travis.yml
 git add .travis.yml
-git commit -m 'chore(travis): build with node 6.3.1'
+git commit -m 'chore(travis): build with node 6.4'
 git push
-
 ---
 greenkeeper enable
 ---
