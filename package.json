@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Kronos-Integration/kronos-main#readme",
   "devDependencies": {
-    "asciidoctor.js": "1.5.5-1",
+    "asciidoctor.js": "^1.5.5-2",
     "broccoli": "^0.16.9",
     "broccoli-funnel": "^1.0.6",
     "broccoli-merge-trees": "^1.1.4",
@@ -34,13 +34,16 @@
     "semantic-release": "6.2.2",
     "verb": "^0.8.10"
   },
-  "contributors": [{
-    "name": "Torsten Link",
-    "email": "torstenlink@gmx.de"
-  }, {
-    "name": "Markus Felten",
-    "email": "markus.felten@gmx.de"
-  }],
+  "contributors": [
+    {
+      "name": "Torsten Link",
+      "email": "torstenlink@gmx.de"
+    },
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
   "license": "BSD-2-Clause",
   "engines": {
     "node": ">=6.1"
