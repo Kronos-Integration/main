@@ -31,7 +31,7 @@
     "mocha": "3.0.2",
     "node-github": "0.0.3",
     "octokat": "^0.4.18",
-    "semantic-release": "6.2.2",
+    "semantic-release": "6.3.0",
     "verb": "^0.8.10"
   },
   "contributors": [
@@ -46,7 +46,7 @@
   ],
   "license": "BSD-2-Clause",
   "engines": {
-    "node": ">=6.1"
+    "node": ">=6.4"
   },
   "verb": {
     "ignore": [
