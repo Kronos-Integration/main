@@ -10,8 +10,8 @@ const githubChangeRemoteFile = require('github-change-remote-file'),
   keychain = require('keychain');
 
 
-let readme = true;
-let package_json = false;
+let readme = false;
+let package_json = true;
 let travis_yml = false;
 
 commander
@@ -48,7 +48,7 @@ if (commander.save) {
     password: 'xxx'
   }, function (err, pass) {
     if (err) {
-      console.log(`${err}`);
+      console.error(`${err}`);
       return;
     }
     console.log('password set');
@@ -59,7 +59,7 @@ if (commander.save) {
 
 keychain.getPassword(keystore, (err, pass) => {
   if (err) {
-    console.log(`${err}`);
+    console.error(`${err}`);
     return;
   }
   work(pass);
@@ -101,7 +101,7 @@ function work(token) {
       }
     }, (err, res) => {
       if (err) {
-        console.log(err);
+        console.error(err);
       } else {
         console.log(res.html_url);
       }
@@ -124,9 +124,7 @@ function work(token) {
         };
         pkg.homepage = `https://github.com/${user}/${repo}#readme`;
 
-        if (pkg.version === '0.0.0') {
-          pkg.version = '0.0.0-semantic-release';
-        }
+        pkg.version = '0.0.0-semantic-release';
 
         if (pkg.release && pkg.release.debug === false) {
           delete pkg.release;
@@ -190,7 +188,7 @@ function work(token) {
       }
     }, (err, res) => {
       if (err) {
-        console.log(err);
+        console.error(err);
       } else {
         console.log(res.html_url);
       }
@@ -247,7 +245,7 @@ function work(token) {
       }
     }, (err, res) => {
       if (err) {
-        console.log(err);
+        console.error(err);
       } else {
         console.log(res.html_url);
       }
