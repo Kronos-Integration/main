@@ -6,7 +6,7 @@ do
   (
   cd $i
   git pull
-  sed -i '' 's/"node": ">=6.*"/"node": ">=6.4"/' package.json
+  sed -i '' 's/"node": ">=6.*"/"node": ">=6.5"/' package.json
   git add package.json
   git commit -m 'chore(npm): node 6.4'
   git push
