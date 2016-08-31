@@ -6,9 +6,9 @@ do
   (
   cd $i
   git pull
-  sed -i '' 's/  - 6.[0123].*/  - 6.4/' .travis.yml
+  sed -i '' 's/  - 6.[0123].*/  - 6.5/' .travis.yml
   git add .travis.yml
-  git commit -m 'chore(travis): build with node 6.4'
+  git commit -m 'chore(travis): build with node 6.5'
   git push
 )
 done
@@ -34,6 +34,12 @@ if [ $? -eq 1 ]; then
   git commit -m 'chore(dependency): mocha@3.0.0'
   git push
 fi
+---
+git pull
+sed -i '' 's/"node": ">=6.*"/"node": ">=6.5"/' package.json
+git add package.json
+git commit -m 'chore(npm): node 6.4'
+git push
 ---
 git pull
 sed -i '' 's/  - 6.[0123].*/  - 6.4/' .travis.yml
