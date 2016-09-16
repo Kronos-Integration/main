@@ -1,23 +1,25 @@
 #!/usr/bin/env node
 
-"use strict";
+/* jslint node: true, esnext: true */
 
-const //GitHubApi = require("node-github"),
+'use strict';
+
+const //GitHubApi = require('node-github'),
   Octokat = require('octokat'),
   keychain = require('keychain'),
   spawn = require('child_process').spawnSync;
 
 /*
 var github = new GitHubApi({
-  version: "3.0.0",
+  version: '3.0.0',
   debug: false
 });
 */
 
-let account = "arlac77";
-let org = "Kronos-Integration";
-let org_id = "14301944";
-let team_id = "1765081";
+let account = 'arlac77';
+let org = 'Kronos-Integration';
+let org_id = '14301944';
+let team_id = '1765081';
 
 keychain.getPassword({
   account: account,
@@ -50,8 +52,6 @@ octo.orgs(org).fetch().then(o => {
   console.log(`fetch: ${JSON.stringify(o)}`);
 });
 */
-
-
 
 /*
   github.orgs.getTeamRepos({
