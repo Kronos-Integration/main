@@ -26,7 +26,7 @@
     "github-change-remote-file": "^4.2.0",
     "istanbul": "0.4.5",
     "js-yaml": "^3.6.1",
-    "jsdoc": "3.4.1",
+    "jsdoc": "3.4.0",
     "keychain": "^1.0.0",
     "mocha": "3.0.2",
     "node-github": "0.0.3",
@@ -46,7 +46,7 @@
   ],
   "license": "BSD-2-Clause",
   "engines": {
-    "node": ">=6.4"
+    "node": ">=6.6"
   },
   "verb": {
     "ignore": [
