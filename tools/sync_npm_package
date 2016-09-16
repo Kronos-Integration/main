@@ -147,7 +147,7 @@ function work(token) {
         });
 
         pkg.engines = {
-          node: '>=6.5'
+          node: '>=6.6'
         };
 
         pkg.license = 'BSD-2-Clause';
@@ -203,7 +203,7 @@ function work(token) {
         const yml = yaml.safeLoad(content);
 
         yml.node_js = [
-          '6.5'
+          '6.6'
         ];
 
         if (yml.branches === undefined) {
