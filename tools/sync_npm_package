@@ -103,7 +103,7 @@ function work(token) {
       if (err) {
         console.error(err);
       } else {
-        console.log(res.html_url);
+        console.log(res);
       }
     });
 
@@ -190,7 +190,7 @@ function work(token) {
       if (err) {
         console.error(err);
       } else {
-        console.log(res.html_url);
+        console.log(res);
       }
     });
 
@@ -247,7 +247,7 @@ function work(token) {
       if (err) {
         console.error(err);
       } else {
-        console.log(res.html_url);
+        console.log(res);
       }
     });
 }
