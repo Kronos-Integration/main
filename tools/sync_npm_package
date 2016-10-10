@@ -133,8 +133,8 @@ function work(token) {
         Object.assign(pkg.devDependencies, {
           'semantic-release': '6.3.1',
           'chai': '3.5.0',
-          'mocha': '3.1.0',
-          'jsdoc': '3.4.0',
+          'mocha': '3.1.1',
+          'jsdoc': '3.4.2',
           'istanbul': '0.4.5',
           'cz-conventional-changelog': '1.2.0'
         });
