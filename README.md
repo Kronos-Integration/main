@@ -4,6 +4,7 @@
 [![bithound](https://www.bithound.io/github/Kronos-Integration/kronos-main/badges/score.svg)](https://www.bithound.io/github/Kronos-Integration/kronos-main)
 [![codecov.io](http://codecov.io/github/Kronos-Integration/kronos-main/coverage.svg?branch=master)](http://codecov.io/github/Kronos-Integration/kronos-main?branch=master)
 [![Code Climate](https://codeclimate.com/github/Kronos-Integration/kronos-main/badges/gpa.svg)](https://codeclimate.com/github/Kronos-Integration/kronos-main)
+[![Known Vulnerabilities](https://snyk.io/test/github/Kronos-Integration/kronos-main/badge.svg)](https://snyk.io/test/github/Kronos-Integration/kronos-main)
 [![GitHub Issues](https://img.shields.io/github/issues/Kronos-Integration/kronos-main.svg?style=flat-square)](https://github.com/Kronos-Integration/kronos-main/issues)
 [![Dependency Status](https://david-dm.org/Kronos-Integration/kronos-main.svg)](https://david-dm.org/Kronos-Integration/kronos-main)
 [![devDependency Status](https://david-dm.org/Kronos-Integration/kronos-main/dev-status.svg)](https://david-dm.org/Kronos-Integration/kronos-main#info=devDependencies)
