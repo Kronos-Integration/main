@@ -10,8 +10,8 @@ const githubChangeRemoteFile = require('github-change-remote-file'),
   keychain = require('keychain');
 
 
-let readme = false;
-let package_json = true;
+let readme = true;
+let package_json = false;
 let travis_yml = false;
 
 commander
@@ -22,7 +22,7 @@ commander
 
 const keystore = {
   account: 'arlac77',
-  service: 'github_token'
+  service: 'GitHub for Mac SSH key passphrase — github.com' // 'github_token'
 };
 
 if (commander.keystore) {
@@ -80,6 +80,7 @@ function work(token) {
 [![bithound](https://www.bithound.io/github/Kronos-Integration/{{name}}/badges/score.svg)](https://www.bithound.io/github/Kronos-Integration/{{name}})
 [![codecov.io](http://codecov.io/github/Kronos-Integration/{{name}}/coverage.svg?branch=master)](http://codecov.io/github/Kronos-Integration/{{name}}?branch=master)
 [![Code Climate](https://codeclimate.com/github/Kronos-Integration/{{name}}/badges/gpa.svg)](https://codeclimate.com/github/Kronos-Integration/{{name}})
+[![Known Vulnerabilities](https://snyk.io/test/github/Kronos-Integration/{{name}}/badge.svg)](https://snyk.io/test/github/Kronos-Integration/{{name}})
 [![GitHub Issues](https://img.shields.io/github/issues/Kronos-Integration/{{name}}.svg?style=flat-square)](https://github.com/Kronos-Integration/{{name}}/issues)
 [![Dependency Status](https://david-dm.org/Kronos-Integration/{{name}}.svg)](https://david-dm.org/Kronos-Integration/{{name}})
 [![devDependency Status](https://david-dm.org/Kronos-Integration/{{name}}/dev-status.svg)](https://david-dm.org/Kronos-Integration/{{name}}#info=devDependencies)
