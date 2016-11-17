@@ -20,7 +20,7 @@
     "asciidoctor.js": "^1.5.5-2",
     "broccoli": "^0.16.9",
     "broccoli-funnel": "^1.0.8",
-    "broccoli-merge-trees": "^1.1.4",
+    "broccoli-merge-trees": "^1.1.5",
     "chai": "3.5.0",
     "cz-conventional-changelog": "1.2.0",
     "github-change-remote-file": "^4.2.0",
