@@ -58,9 +58,6 @@
 [submodule "archive-arangodb"]
 	path = archive-arangodb
 	url = https://github.com/Kronos-Integration/archive-arangodb.git
-[submodule "npm-package-template"]
-	path = npm-package-template
-	url = https://github.com/Kronos-Integration/npm-package-template.git
 [submodule "kronos-service-manager-ui"]
 	path = kronos-service-manager-ui
 	url = https://github.com/Kronos-Integration/kronos-service-manager-ui.git
