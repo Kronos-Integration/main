@@ -16,8 +16,8 @@
   },
   "homepage": "https://github.com/Kronos-Integration/kronos-main#readme",
   "devDependencies": {
-    "asciidoctor.js": "^1.5.5-2",
-    "broccoli": "^1.0.0",
+    "asciidoctor.js": "^1.5.5-4",
+    "broccoli": "^1.1.0",
     "broccoli-funnel": "^1.1.0",
     "broccoli-merge-trees": "^1.2.1",
     "chai": "3.5.0",
@@ -26,19 +26,22 @@
     "istanbul": "0.4.5",
     "js-yaml": "^3.7.0",
     "keychain": "^1.0.0",
-    "mocha": "3.2.0",
+    "mocha": "^3.2.0",
     "node-github": "0.0.3",
     "octokat": "^0.4.18",
     "semantic-release": "6.3.2",
     "verb": "^0.8.10"
   },
-  "contributors": [{
-    "name": "Torsten Link",
-    "email": "torstenlink@gmx.de"
-  }, {
-    "name": "Markus Felten",
-    "email": "markus.felten@gmx.de"
-  }],
+  "contributors": [
+    {
+      "name": "Torsten Link",
+      "email": "torstenlink@gmx.de"
+    },
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
   "license": "BSD-2-Clause",
   "engines": {
     "node": ">=6.6"
