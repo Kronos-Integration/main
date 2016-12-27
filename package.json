@@ -25,7 +25,7 @@
     "github-change-remote-file": "^4.2.0",
     "istanbul": "0.4.5",
     "js-yaml": "^3.7.0",
-    "keychain": "^1.0.0",
+    "keychain": "^1.1.0",
     "mocha": "^3.2.0",
     "node-github": "0.0.3",
     "octokat": "^0.4.18",
