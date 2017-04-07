@@ -12,20 +12,6 @@
 [![downloads](http://img.shields.io/npm/dm/kronos-main.svg?style=flat-square)](https://npmjs.org/package/kronos-main)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-[![npm](https://img.shields.io/npm/v/kronos-main.svg)](https://www.npmjs.com/package/kronos-main)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/Kronos-Integration/kronos-main)
-[![Build Status](https://secure.travis-ci.org/Kronos-Integration/kronos-main.png)](http://travis-ci.org/Kronos-Integration/kronos-main)
-[![bithound](https://www.bithound.io/github/Kronos-Integration/kronos-main/badges/score.svg)](https://www.bithound.io/github/Kronos-Integration/kronos-main)
-[![Coverage Status](https://coveralls.io/repos/Kronos-Integration/kronos-main/badge.svg)](https://coveralls.io/r/Kronos-Integration/kronos-main)
-[![Code Climate](https://codeclimate.com/github/Kronos-Integration/kronos-main/badges/gpa.svg)](https://codeclimate.com/github/Kronos-Integration/kronos-main)
-[![GitHub Issues](https://img.shields.io/github/issues/Kronos-Integration/kronos-main.svg?style=flat-square)](https://github.com/Kronos-Integration/kronos-main/issues)
-[![Dependency Status](https://david-dm.org/Kronos-Integration/kronos-main.svg)](https://david-dm.org/Kronos-Integration/kronos-main)
-[![devDependency Status](https://david-dm.org/Kronos-Integration/kronos-main/dev-status.svg)](https://david-dm.org/Kronos-Integration/kronos-main#info=devDependencies)
-[![docs](http://inch-ci.org/github/Kronos-Integration/kronos-main.svg?branch=master)](http://inch-ci.org/github/Kronos-Integration/kronos-main)
-[![downloads](http://img.shields.io/npm/dm/kronos-main.svg?style=flat-square)](https://npmjs.org/package/kronos-main)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![Stories in Ready](https://badge.waffle.io/Kronos-Integration/kronos-main.svg?label=ready&title=Ready)](https://waffle.io/Kronos-Integration/kronos-main)
-
 > Umbrella for all Kronos modules
 
 ## Install
