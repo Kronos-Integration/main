@@ -19,25 +19,28 @@
     "asciidoctor.js": "^1.5.5-4",
     "broccoli": "^1.1.1",
     "broccoli-funnel": "^1.1.0",
-    "broccoli-merge-trees": "^1.2.1",
+    "broccoli-merge-trees": "^2.0.0",
     "chai": "3.5.0",
-    "cz-conventional-changelog": "2.0.0",
+    "cz-conventional-changelog": "^2.0.0",
     "github-change-remote-file": "^4.2.0",
     "istanbul": "0.4.5",
-    "js-yaml": "^3.8.1",
+    "js-yaml": "^3.8.3",
     "mocha": "^3.2.0",
     "node-github": "0.0.3",
-    "octokat": "^0.6.2",
+    "octokat": "^0.6.4",
     "semantic-release": "6.3.2",
     "verb": "^0.8.10"
   },
-  "contributors": [{
-    "name": "Torsten Link",
-    "email": "torstenlink@gmx.de"
-  }, {
-    "name": "Markus Felten",
-    "email": "markus.felten@gmx.de"
-  }],
+  "contributors": [
+    {
+      "name": "Torsten Link",
+      "email": "torstenlink@gmx.de"
+    },
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
   "license": "BSD-2-Clause",
   "engines": {
     "node": ">=6.6"
