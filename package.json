@@ -18,7 +18,7 @@
   "devDependencies": {
     "asciidoctor.js": "^1.5.5-4",
     "broccoli": "^1.1.1",
-    "broccoli-funnel": "^1.1.0",
+    "broccoli-funnel": "^1.2.0",
     "broccoli-merge-trees": "^2.0.0",
     "chai": "3.5.0",
     "cz-conventional-changelog": "^2.0.0",
