@@ -16,6 +16,8 @@
 
 ## Install
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Kronos-Integration/kronos-main.svg)](https://greenkeeper.io/)
+
 Install with [npm](https://www.npmjs.com/)
 
 ```sh
