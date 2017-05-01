@@ -27,7 +27,7 @@
     "js-yaml": "^3.8.3",
     "mocha": "^3.2.0",
     "node-github": "0.0.3",
-    "octokat": "^0.6.4",
+    "octokat": "^0.6.5",
     "semantic-release": "6.3.2",
     "verb": "^0.8.10"
   },
