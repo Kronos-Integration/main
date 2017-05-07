@@ -28,7 +28,7 @@
     "mocha": "^3.2.0",
     "node-github": "0.0.3",
     "octokat": "^0.7.0",
-    "semantic-release": "6.3.2",
+    "semantic-release": "6.3.6",
     "verb": "^0.8.10"
   },
   "contributors": [
