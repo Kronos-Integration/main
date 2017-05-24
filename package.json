@@ -25,7 +25,7 @@
     "github-change-remote-file": "^4.2.0",
     "istanbul": "0.4.5",
     "js-yaml": "^3.8.3",
-    "mocha": "^3.2.0",
+    "mocha": "^3.4.2",
     "node-github": "0.0.3",
     "octokat": "^0.8.0",
     "semantic-release": "6.3.6",
