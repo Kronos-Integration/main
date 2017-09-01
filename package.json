@@ -20,7 +20,7 @@
     "broccoli": "^1.1.1",
     "broccoli-funnel": "^2.0.0",
     "broccoli-merge-trees": "^2.0.0",
-    "chai": "4.1.1",
+    "chai": "4.1.2",
     "cz-conventional-changelog": "^2.0.0",
     "github-change-remote-file": "^4.2.0",
     "istanbul": "0.4.5",
