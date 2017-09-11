@@ -5,6 +5,17 @@ for i in $(git submodule foreach --quiet 'echo $path')
 do
   (
   cd $i
+  git checkout package.json
+  git pull
+)
+done
+
+exit
+---
+for i in $(git submodule foreach --quiet 'echo $path')
+do
+  (
+  cd $i
   git pull
   npm run docs
   git add README.md
@@ -12,18 +23,6 @@ do
   git push
 )
 done
-
-exit
----
-cd $i
-grep '"cz-conventional-changelog": "1.1.6"' package.json >/dev/null
-if [ $? -eq 1 ]; then
-  echo $i
-  npm install --save-dev --save-exact cz-conventional-changelog@1.1.7
-  git add package.json
-  git commit -m 'chore(dependency): cz-conventional-changelog@1.1.7'
-  git push
-fi
 ---
 cd $i
 grep '"mocha": "2."' package.json >/dev/null
