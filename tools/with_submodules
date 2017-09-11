@@ -6,9 +6,9 @@ do
   (
   cd $i
   git pull
-  sed -i '' 's/  - 6.[0123].*/  - 6.5/' .travis.yml
-  git add .travis.yml
-  git commit -m 'chore(travis): build with node 6.5'
+  npm run docs
+  git add README.md
+  git commit -m 'docs(README): sync from template'
   git push
 )
 done
