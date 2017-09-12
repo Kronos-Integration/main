@@ -21,15 +21,10 @@
     "broccoli-funnel": "^2.0.0",
     "broccoli-merge-trees": "^2.0.0",
     "chai": "4.1.2",
-    "cz-conventional-changelog": "^2.0.0",
-    "github-change-remote-file": "^4.2.0",
     "istanbul": "0.4.5",
     "js-yaml": "^3.8.3",
     "mocha": "^3.4.2",
-    "node-github": "0.0.3",
-    "octokat": "^0.9.1",
-    "semantic-release": "7.0.2",
-    "verb": "^0.8.10"
+    "semantic-release": "7.0.2"
   },
   "contributors": [
     {
@@ -43,28 +38,6 @@
   ],
   "license": "BSD-2-Clause",
   "engines": {
-    "node": ">=6.6"
-  },
-  "verb": {
-    "ignore": [
-      ".git"
-    ],
-    "deps": {
-      "include": [
-        "readme-includes",
-        "readme-badges"
-      ]
-    },
-    "reflinks": {
-      "list": [
-        "jsdiff",
-        "option-cache",
-        "template",
-        "plasma",
-        "config-cache"
-      ]
-    }
-  },
-  "keywords": []
+    "node": ">=8.4"
   }
 }
