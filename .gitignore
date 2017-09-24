@@ -1,5 +1,13 @@
+package-lock.json
 node_modules
-coverage
+build
+dist
+*.log
+*.dump
+.DS_Store
+.nyc_output
+.test
+.tmp
+
 npm-debug.log
 docApp
-package-lock.json
