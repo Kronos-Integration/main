@@ -15,7 +15,7 @@
   },
   "homepage": "https://github.com/Kronos-Integration/kronos-main#readme",
   "devDependencies": {
-    "semantic-release": "^8.0.3",
+    "semantic-release": "^11.0.2",
     "jsdoc-to-markdown": "^3.0.0",
     "jsdoc-babel": "^0.3.0",
     "markdown-doctest": "^0.9.1",
