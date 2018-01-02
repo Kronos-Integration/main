@@ -133,3 +133,9 @@
 [submodule "kronos-service-logger-gelf"]
 	path = kronos-service-logger-gelf
 	url = https://github.com/Kronos-Integration/kronos-service-logger-gelf.git
+[submodule "interceptor-gzip"]
+	path = interceptor-gzip
+	url = https://github.com/Kronos-Integration/interceptor-gzip.git
+[submodule "test-step"]
+	path = test-step
+	url = https://github.com/Kronos-Integration/test-step.git
