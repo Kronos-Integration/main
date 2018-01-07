@@ -139,3 +139,6 @@
 [submodule "test-step"]
 	path = test-step
 	url = https://github.com/Kronos-Integration/test-step.git
+[submodule "test-interceptor"]
+	path = test-interceptor
+	url = https://github.com/Kronos-Integration/test-interceptor.git
