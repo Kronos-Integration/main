@@ -1,26 +1,9 @@
 {
   "name": "kronos-main",
   "version": "0.0.0-semantic-release",
+  "main": "dist/index.js",
   "description": "Umbrella for all Kronos modules",
-  "scripts": {
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "docs": "jsdoc2md --configure doc/jsdoc.json -l off -t doc/README.hbs -f src/*.js >README.md"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kronos-Integration/kronos-main.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Kronos-Integration/kronos-main/issues"
-  },
-  "homepage": "https://github.com/Kronos-Integration/kronos-main#readme",
-  "devDependencies": {
-    "semantic-release": "^11.0.2",
-    "jsdoc-to-markdown": "^3.0.0",
-    "jsdoc-babel": "^0.3.0",
-    "markdown-doctest": "^0.9.1",
-    "xo": "^0.19.0"
-  },
+  "keywords": [],
   "contributors": [
     {
       "name": "Torsten Link",
@@ -32,12 +15,59 @@
     }
   ],
   "license": "BSD-2-Clause",
-  "engines": {
-    "node": ">=8.5.0"
+  "scripts": {
+    "semantic-release": "semantic-release",
+    "docs": "documentation readme {{module}} --section=API",
+    "cover": "nyc --temp-directory build/nyc ava",
+    "precover": "rollup -c tests/rollup.config.js",
+    "test": "ava",
+    "pretest": "rollup -c tests/rollup.config.js",
+    "posttest": "npm run prepare && markdown-doctest",
+    "prepare": "rollup -c",
+    "lint": "documentation lint {{module}}"
   },
-  "main": "dist/index.js",
-  "keywords": [],
   "dependencies": {},
+  "devDependencies": {
+    "semantic-release": "^11.1.0",
+    "markdown-doctest": "^0.9.1",
+    "documentation": "^5.3.5",
+    "nyc": "^11.4.1",
+    "ava": "^0.24.0",
+    "rollup": "^0.53.3",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-multi-entry": "^2.0.2"
+  },
+  "engines": {
+    "node": ">=8.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kronos-Integration/kronos-main.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kronos-Integration/kronos-main/issues"
+  },
+  "homepage": "https://github.com/Kronos-Integration/kronos-main#readme",
+  "ava": {
+    "files": [
+      "build/*-test.js"
+    ],
+    "presets": [
+      "env"
+    ],
+    "require": [
+      "babel-register"
+    ]
+  },
+  "nyc": {
+    "include": [
+      "build/*-test.js"
+    ],
+    "reporter": [
+      "lcov"
+    ],
+    "report-dir": "./build/coverage"
+  },
   "xo": {
     "space": true
   },
