@@ -33,7 +33,7 @@
     "documentation": "^5.3.5",
     "nyc": "^11.4.1",
     "ava": "^0.24.0",
-    "rollup": "^0.54.0",
+    "rollup": "^0.55.0",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-multi-entry": "^2.0.2"
   },
