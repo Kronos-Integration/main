@@ -1,7 +1,6 @@
 {
   "name": "kronos-main",
   "version": "0.0.0-semantic-release",
-  "main": "dist/index.js",
   "description": "Umbrella for all Kronos modules",
   "keywords": [],
   "contributors": [
@@ -16,29 +15,12 @@
   ],
   "license": "BSD-2-Clause",
   "scripts": {
-    "semantic-release": "semantic-release",
-    "docs": "documentation readme {{module}} --section=API",
-    "cover": "nyc --temp-directory build/nyc ava",
-    "precover": "rollup -c tests/rollup.config.js",
-    "test": "ava",
-    "pretest": "rollup -c tests/rollup.config.js",
-    "posttest": "npm run prepare && markdown-doctest",
-    "prepare": "rollup -c",
-    "lint": "documentation lint {{module}}"
+    "semantic-release": "semantic-release"
   },
   "dependencies": {},
-  "devDependencies": {
-    "semantic-release": "^15.0.0",
-    "markdown-doctest": "^0.9.1",
-    "documentation": "^7.0.0",
-    "nyc": "^11.4.1",
-    "ava": "^0.25.0",
-    "rollup": "^0.59.0",
-    "rollup-plugin-babel": "^3.0.3",
-    "rollup-plugin-multi-entry": "^2.0.2"
-  },
+  "devDependencies": {},
   "engines": {
-    "node": ">=8.9.4"
+    "node": ">=8.11"
   },
   "repository": {
     "type": "git",
@@ -47,33 +29,5 @@
   "bugs": {
     "url": "https://github.com/Kronos-Integration/kronos-main/issues"
   },
-  "homepage": "https://github.com/Kronos-Integration/kronos-main#readme",
-  "ava": {
-    "files": [
-      "build/*-test.js"
-    ],
-    "presets": [
-      "env"
-    ],
-    "require": [
-      "babel-register"
-    ]
-  },
-  "nyc": {
-    "include": [
-      "build/*-test.js"
-    ],
-    "reporter": [
-      "lcov"
-    ],
-    "report-dir": "./build/coverage"
-  },
-  "xo": {
-    "space": true
-  },
-  "template": {
-    "repository": {
-      "url": "https://github.com/arlac77/npm-package-template.git"
-    }
-  }
+  "homepage": "https://github.com/Kronos-Integration/kronos-main#readme"
 }
