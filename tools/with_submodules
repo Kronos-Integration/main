@@ -1,5 +1,20 @@
 #!/usr/bin/env bash
 
+for i in $(git submodule foreach --quiet 'echo $path')
+do
+  (
+  cd $i
+  git pull
+  perl -i~ -pe 's/"node": ">=10"/"node": ">=10.6"/' package.json
+  git add package.json
+  git commit -m 'chore(package): use node 10.6'
+
+#  perl -i~ -pe 's/  - 8.11.2//' .travis.yml
+#  git add .travis.yml
+#  git commit -m 'chore(travis): drop node 8.11'
+  git push
+)
+done
 
 for i in $(git submodule foreach --quiet 'echo $path')
 do
